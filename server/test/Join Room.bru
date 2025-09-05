@@ -1,0 +1,27 @@
+meta {
+  name: Join Room
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:8787/rooms/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 1
+}
+
+body:json {
+  {
+    "name": "Krish 3",
+    "mbti": "ENFP",
+    "zodiac": "virgo"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

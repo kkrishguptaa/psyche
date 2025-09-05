@@ -1,0 +1,25 @@
+meta {
+  name: Create Room
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8787/rooms
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "author": {
+      "name": "Krish Gupta",
+      "mbti": "INTP",
+      "zodiac": "libra"
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+}
