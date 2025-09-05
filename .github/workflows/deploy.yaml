@@ -22,3 +22,4 @@ jobs:
           workingDirectory: "server"
           wranglerVersion: 4.34.0
           command: "deploy --minify"
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
