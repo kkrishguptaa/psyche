@@ -20,3 +20,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           workingDirectory: "server"
+          wranglerVersion: 4.34.0
+          command: "deploy --minify"
